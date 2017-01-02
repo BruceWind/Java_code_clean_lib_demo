@@ -1,10 +1,9 @@
 apply plugin: 'com.android.application'
-
-//apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    buildToolsVersion "24.0.1"
 
     defaultConfig {
         applicationId "com.androidyuan.java_code_clean_lib_demo"
@@ -27,7 +26,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.1.0'
 
     compile "com.google.auto.value:auto-value:1.2"
-    compile 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
+    apt "com.google.auto.value:auto-value:1.2"
+
+    apt 'com.ryanharter.auto.value:auto-value-parcel:0.2.5'
 
 // Optionally for TypeAdapter support
     compile 'com.ryanharter.auto.value:auto-value-parcel-adapter:0.2.5'
