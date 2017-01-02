@@ -1,14 +1,14 @@
 package com.androidyuan.java_code_clean_lib_demo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.androidyuan.java_code_clean_lib_demo.model.Student1;
 import com.androidyuan.java_code_clean_lib_demo.model.Student2;
 import com.androidyuan.java_code_clean_lib_demo.model.Student3;
 
-public class MainActivity extends AppCompatActivity {
+public class AutoValueTest extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
